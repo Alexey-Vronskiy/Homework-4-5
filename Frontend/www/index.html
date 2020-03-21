@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="cart">
+        <div class="orders-info">
+            <div class="orders">
+                <div style="padding-right: 10px">Order</div>
+                <div class="quantity"> 0 </div>
+            </div>
+            <button class="clear"> Clear the order </button>
+        </div>
+
+        <div class="container-for-orders">
+            <div class="raw-of-offer">
+                <div class="left-info">
+                    <div class="name"> BBQ(велика) </div>
+                    <div class="raw-info">
+                        <div class="size" style="padding-right: 10px">
+                            <img style="float:centre" src="assets/images/size-icon.svg">
+                            <div style="margin-left: 5px"> 40 </div>
+                        </div>
+
+                        <div class="weight">
+                            <img style="float:centre" src="assets/images/weight.svg">
+                            <div style="margin-left: 5px"> 370 </div>
+                        </div>
+                    </div>
+                    <div class="info-buttons">
+                        <div style="font-weight:700">556грн</div>
+                        <div class="main-buttons" style="padding-left: 20px">
+                            <button type="button" class="minus" style="background-image: url(assets/images/iconfinder_minus_1645995.svg)">
+
+                            </button>
+                            <div class="quantity-in"> 1 </div>
+                            <button type="button" class="plus" style="background-image: url(assets/images/iconfinder_plus_1646001.svg)"> </button>
+                            <button type="button" class="remove"> X </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-photo">
+                    <img src="assets/images/pizza_1.jpg" class="small-photo">
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="your-order">
+            <div class="order-sum">
+                <div class="total"> In total: </div>
+                <div class="sum"> 0 </div>
+                <div id="currency"> грн </div>
+            </div>
+            <button type="button" class="warning" id="check"> Check in </button>
+        </div>
+    </div>
+
+
+
+    <div class="up-label">   
+        <div style="float:left" class="label1">
+            <p></p>
+            <div>PIZZA</div>
+            <!--            <span></span>-->
+            <!--            <span>KMA </span>-->
+            <div> KMA </div>
+        </div>
+        <img style="float:left" src="assets/images/discount.svg" class="image">
+    </div>
+
+
+    <div class="main-board">
+        <div class="information-board">
+            <div class="main-info">
+                <div id="fs" style="font-size: 18px; margin-right: 30px"> (044)222 5 222 </div>
+                <div id="ss" style="font-size: 12px; margin-right: 30px; margin-top: 5px"> 24 години/ 7 днів на тиждень </div>
+                <div id="ts" style="font-size: 14px; margin-right: 30px; margin-top: 2px"> Безкоштовна доставка піци </div>
+                <button type="button" class="warning" id="log-in"> Log in </button>
+            </div>
+            <div class="pizza-title">
+                <div> PIZZA </div>
+                <button type="button" class="warning" id="log-in-2"> Log in </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="down-label">
+        <img style="float:left" src="assets/images/discount.svg">
+        <div style="float:left" class="label2">
+            <div>ЦЬОГО</div>
+            <div>ТИЖНЯ </div>
+            <p>НА ВСЕ </p>
+            <div>- - -</div>
+            <p>-20%</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="all-pizzas">
+            <div class="in-stack">
+                <div class="title">
+                    <div class="all"> Усі піци </div>
+                    <div class="number-in-stack"> 8 </div>
+                </div>
+            </div>
+            <div class="types" id="menu">
+                <button type="button" class="warning" id="all" style="width: 30px; margin-top: 0px">Усі</button>
+                <button type="button" class="btn btn-link" id="meat"> М'ясні </button>
+                <button type="button" class="btn btn-link" id="pineapple"> З ананасами </button>
+                <button type="button" class="btn btn-link" id="tomato"> З томатами </button>
+                <button type="button" class="btn btn-link" id="seafood"> З морепродуктами </button>
+                <button type="button" class="btn btn-link" id="vega"> Вега </button>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="pizza_list">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <!--                <div class="badge-new">Нова</div>-->
+                <div class="badge-popular">Популярна</div>
+                <div class="thumbnail pizza-card">
+
+                    <img src="assets/images/pizza_1.jpg">
+
+                    <div class="caption">
+                        <div class="head"> Міксовий поло </div>
+                        <div style="color:gray" style="font-size: 12px"> Мʼясна піца </div>
+                        <p style="font-weight: 500">
+                            Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна паста , петрушка </p>
+                        <div class="double-grid">
+
+                            <div class="left">
+                                <div class="size" style="margin-top: 20px;">
+                                    <img style="float:centre" src="assets/images/size-icon.svg">
+                                    <div style="margin-left: 5px"> 30 </div>
+                                </div>
+                                <div class="weight" style="margin-bottom: 20px">
+                                    <img style="float:centre" src="assets/images/weight.svg">
+                                    <div style="margin-left: 5px"> 370 </div>
+                                </div>
+                                <div id="price"> 196 </div>
+                                <div id="price" style="font-size: 15px">грн.</div>
+
+                                <div class="buyy">
+                                    <button type="button" class="warning" id="buy">Купити</button>
+                                </div>
+                            </div>
+
+                            <div class="right">
+
+                                <div class="size" style="margin-top: 20px;">
+                                    <img style="float:centre" src="assets/images/size-icon.svg">
+                                    <div style="margin-left: 5px"> 30 </div>
+                                </div>
+                                <div class="weight" style="margin-bottom: 20px">
+                                    <img style="float:centre" src="assets/images/weight.svg">
+                                    <div style="margin-left: 5px"> 370 </div>
+                                </div>
+                                <div id="price"> 196 </div>
+                                <div id="price" style="font-size: 15px">грн.</div>
+
+
+                                <div class="buyy">
+                                    <button type="button" class="warning" id="buy">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- jQuery JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+    <!--Bootsrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--Own JavaScript -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>
+
+</body>
+
+</html>
